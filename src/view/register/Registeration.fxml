@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.register.RegisterationController">
+   <children>
+      <AnchorPane prefHeight="568.0" prefWidth="992.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane fx:id="root" layoutX="30.0" layoutY="110.0" prefHeight="401.0" prefWidth="919.0">
+               <children>
+                  <ImageView fitHeight="401.0" fitWidth="919.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../asserts/Bighead.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txtRegID" alignment="CENTER" layoutX="24.0" layoutY="26.0" prefHeight="34.0" prefWidth="155.0" promptText="Registration ID">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtDate" layoutX="22.0" layoutY="291.0" prefHeight="34.0" prefWidth="147.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtFee" layoutX="21.0" layoutY="224.0" prefHeight="34.0" prefWidth="195.0" promptText="Reg Fee">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="251.0" layoutY="324.0" mnemonicParsing="false" onAction="#AddOnAction" prefHeight="40.0" prefWidth="131.0" style="-fx-background-color: pink;" text="Register">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="24.0" layoutY="352.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: yellow;" text="Delete">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="cmdSID" layoutX="22.0" layoutY="94.0" prefHeight="34.0" prefWidth="218.0" promptText="Studnet ID">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <ComboBox fx:id="cmdCID" layoutX="22.0" layoutY="159.0" prefHeight="34.0" prefWidth="218.0" promptText="Course ID">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <ImageView fitHeight="334.0" fitWidth="342.0" layoutX="489.0" layoutY="26.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../asserts/working.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="91.0" fitWidth="610.0" layoutX="204.0" layoutY="-6.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../asserts/coollogo_com-833653.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="919.0" layoutY="522.0" mnemonicParsing="false" onAction="#ExitOnAction" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <ImageView fx:id="imgBack" fitHeight="25.0" fitWidth="38.0" layoutX="39.0" layoutY="30.0" onMouseClicked="#BackMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asserts/Left_24px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

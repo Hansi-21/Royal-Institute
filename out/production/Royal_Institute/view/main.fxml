@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="489.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="661.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/mainimage.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="432.0" layoutX="129.0" layoutY="5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnjoin" fitHeight="69.0" fitWidth="99.0" layoutX="527.0" layoutY="363.0" onMouseClicked="#ClickToJoin" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/clickjoin.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
